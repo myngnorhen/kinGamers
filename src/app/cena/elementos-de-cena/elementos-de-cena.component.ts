@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Input } from '@angular/core/src/metadata/directives';
 
 @Component({
   selector: 'app-elementos-de-cena',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./elementos-de-cena.component.css']
 })
 export class ElementosDeCenaComponent implements OnInit {
-
-  constructor() { }
-
+  tituloElemento:string;
+  subElemento:string;
+  imgElemento:string;
+  constructor() {
+ 
+   }
+   getTitulo(titulo){
+    this.tituloElemento=titulo;
+   }
   ngOnInit() {
-  }
 
+  }
+  @Input()
+  elemento:elemento;
 }

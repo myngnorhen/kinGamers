@@ -1,3 +1,4 @@
+import { ElementosCenaServiceService } from './elementos-de-cena/elementos-cena-service.service';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CenaComponent } from './cena.component';
@@ -20,7 +21,8 @@ import {
     MatSidenavModule
   ],
   declarations: [CenaComponent, ElementosDeCenaComponent],
-  exports:[CenaComponent]
+  exports:[CenaComponent],
 
+  providers:[ElementosCenaServiceService]
 })
 export class CenaModule { }

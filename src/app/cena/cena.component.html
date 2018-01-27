@@ -1,3 +1,4 @@
-<div class="cena">
-<app-elementos-de-cena></app-elementos-de-cena>
+<div class="cena" *ngFor= "let elemento of listaDeElementos" >
+<app-elementos-de-cena [elemento]="elemento" ></app-elementos-de-cena>
+
 </div>

@@ -1,3 +1,6 @@
 .cena{
     background-color: brown;
+    display: inline-block;
+    height: 500PX;
+    width: 100%;
 }
