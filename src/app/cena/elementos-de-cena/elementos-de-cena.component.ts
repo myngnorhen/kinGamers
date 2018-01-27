@@ -11,6 +11,7 @@ export class ElementosDeCenaComponent implements OnInit {
   subElemento:string;
   imgElemento:string;
   constructor() {
+  
  
    }
    getTitulo(titulo){
